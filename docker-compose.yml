@@ -88,10 +88,10 @@ services:
     db:
         image: mariadb:latest
         environment:
-        MYSQL_ROOT_PASSWORD: Annaaremere!1
-        MYSQL_DATABASE: legalmente_prod
-        MYSQL_USER: legalmente_user
-        MYSQL_PASSWORD: 2-ua$9hQ26T/
+            MYSQL_ROOT_PASSWORD: Annaaremere!1
+            MYSQL_DATABASE: legalmente_prod
+            MYSQL_USER: legalmente_user
+            MYSQL_PASSWORD: 2-ua$9hQ26T/
         networks:
             - network
         volumes:
