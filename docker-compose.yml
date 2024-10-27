@@ -72,15 +72,15 @@ services:
     ####################################################################################################
     # Redis
     ####################################################################################################
-    #redis:
-    #    image: redis:latest
-    #    command: redis-server --appendonly yes
-    #    ports:
-    #        - "${REDIS_PUBLISHED_PORT:-6379}:6379"
-    #    networks:
-    #        - network
-    #    volumes:
-    #        - app_name_redis:/data
+    redis:
+        image: redis:latest
+        command: redis-server --appendonly yes
+        ports:
+            - "${REDIS_PUBLISHED_PORT:-6379}:6379"
+        networks:
+            - network
+        volumes:
+            - app_name_redis:/data
 
     # ####################################################################################################
     # DATABASE (MariaDB)
